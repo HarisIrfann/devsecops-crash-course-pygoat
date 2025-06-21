@@ -31,6 +31,7 @@ jobs:
 
  image_scan:
    name: Build Image and Run Image Scan
+   needs: sast_scan 
    runs-on: ubuntu-latest
 
    steps:
